@@ -5,7 +5,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class IntervalgraphService {
-  intervalGraphUrl = 'http://127.0.0.1:5000/intervalGraph';
+  intervalGraphUrl = 'https://sentinelapplication.herokuapp.com/intervalGraph';
   constructor(private http: HttpClient) { }
 
   getIntervalGraphData(id: string, since_date: string, until_date: string, is_tw: string, is_dynamic: string) {

@@ -5,7 +5,7 @@ import {HttpClient, HttpParams} from "@angular/common/http";
   providedIn: 'root'
 })
 export class TimeSeriesService {
-  timeSeriesUrl = 'http://127.0.0.1:5000/timeSerie';
+  timeSeriesUrl = 'https://sentinelapplication.herokuapp.com/timeSerie';
 
   constructor(private http: HttpClient) { }
 

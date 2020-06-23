@@ -5,7 +5,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class PiechartService {
-  pieChartUrl = 'http://127.0.0.1:5000/pieChart';
+  pieChartUrl = 'https://sentinelapplication.herokuapp.com/pieChart';
   constructor(private http: HttpClient) { }
 
   getPieChartData(id: string, since_date: string, until_date: string, is_tw: string){

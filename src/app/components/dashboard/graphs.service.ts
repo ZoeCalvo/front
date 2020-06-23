@@ -5,7 +5,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class GraphsService {
-  graphs_Url = 'http://127.0.0.1:5000/getDataforGraphs';
+  graphs_Url = 'https://sentinelapplication.herokuapp.com/getDataforGraphs';
   constructor(private http: HttpClient) { }
 
   getforGraphs(id: string, since_date: string, until_date: string, is_tw: string) {

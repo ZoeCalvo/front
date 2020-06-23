@@ -10,7 +10,7 @@ import {Observable} from "rxjs";
 })
 
 export class DashboardService {
-  graphsUrl = 'http://127.0.0.1:5000/getDataforDashboard';
+  graphsUrl = 'https://sentinelapplication.herokuapp.com/getDataforDashboard';
 
   constructor(private http: HttpClient) { }
 

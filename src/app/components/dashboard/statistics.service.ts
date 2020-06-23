@@ -5,7 +5,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class StatisticsService {
-  statisticsUrl = 'http://127.0.0.1:5000/statistics';
+  statisticsUrl = 'https://sentinelapplication.herokuapp.com/statistics';
   constructor(private http: HttpClient) { }
 
   getStatisticsData(id: string) {

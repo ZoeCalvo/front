@@ -6,8 +6,8 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 })
 
 export class InstagramService {
-  instagramUrl = 'http://127.0.0.1:5000/idInstagramInDB';
-  searchInstagramUrl = 'http://127.0.0.1:5000/searchInstagram';
+  instagramUrl = 'https://sentinelapplication.herokuapp.com/idInstagramInDB';
+  searchInstagramUrl = 'https://sentinelapplication.herokuapp.com/searchInstagram';
   constructor(private http: HttpClient) { }
 
   checkIdInDataBase(id: string) {

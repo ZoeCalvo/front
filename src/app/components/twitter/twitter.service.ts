@@ -5,8 +5,8 @@ import {HttpClient, HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class TwitterService {
-  twitterUrl = 'http://127.0.0.1:5000/idTwitterInDB';
-  searchTwitterUrl = 'http://127.0.0.1:5000/searchTwitter';
+  twitterUrl = 'https://sentinelapplication.herokuapp.com/idTwitterInDB';
+  searchTwitterUrl = 'https://sentinelapplication.herokuapp.com/searchTwitter';
   constructor(private http: HttpClient) { }
 
   checkIdInDataBase(id: string) {

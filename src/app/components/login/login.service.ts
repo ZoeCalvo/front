@@ -6,7 +6,7 @@ import { Login } from './login';
   providedIn: 'root'
 })
 export class LoginService {
-  loginUrl = 'http://127.0.0.1:5000/login';
+  loginUrl = 'https://sentinelapplication.herokuapp.com/login';
   constructor( private http: HttpClient) { }
 
   login(user: Login) {
