@@ -6,7 +6,7 @@ import {Register} from './register';
   providedIn: 'root'
 })
 export class RegisterService {
-  registerUrl = 'http://127.0.0.1:5000/register';
+  registerUrl = 'https://sentinelapplication.herokuapp.com/register';
   constructor( private http: HttpClient) { }
 
   addUser(user: Register) {
